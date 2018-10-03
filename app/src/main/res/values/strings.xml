@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">Télécommande</string>
     <string name="b_power_text">ON / OFF</string>
-    <string name="b_home">HOME</string>
+    <string name="b_home_text">HOME</string>
     <string name="b_volume_up_text">V+</string>
     <string name="b_volume_down_text">V-</string>
     <string name="b_program_up_text">P+</string>
@@ -23,5 +23,5 @@
     <string name="b_up_arrow_text">H</string>
     <string name="b_right_arrow_text">D</string>
     <string name="b_down_arrow_text">B</string>
-    <string name="b_volume_mute">Mute</string>
+    <string name="b_volume_mute_text">Mute</string>
 </resources>

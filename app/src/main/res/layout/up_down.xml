@@ -31,8 +31,7 @@
             app:layout_constraintEnd_toStartOf="@+id/b_volume_mute"
             app:layout_constraintBottom_toBottomOf="parent"/>
 
-    <Button
-            android:text="@string/b_home"
+    <ImageButton
             android:id="@+id/b_home"
             android:tag='12'
             style="@style/Widget.AppCompat.Button.Small"
@@ -41,19 +40,21 @@
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toEndOf="@+id/b_volume_up"
             app:layout_constraintEnd_toStartOf="@+id/b_program_up"
-            app:layout_constraintBottom_toTopOf="@+id/b_volume_mute"/>
+            app:layout_constraintBottom_toTopOf="@+id/b_volume_mute"
+            android:src="@drawable/ic_home_black_24dp"
+            android:contentDescription="@string/b_home_text"/>
 
-    <Button
-            android:text="@string/b_volume_mute"
+    <ImageButton
             android:id="@+id/b_volume_mute"
             android:tag='32'
-            style="@style/Widget.AppCompat.Button.Small"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintTop_toBottomOf="@+id/b_home"
             app:layout_constraintEnd_toStartOf="@+id/b_program_down"
             app:layout_constraintStart_toEndOf="@+id/b_volume_down"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/ic_volume_off_black_24dp"
+            android:contentDescription="@string/b_volume_mute_text"/>
 
     <Button
             android:text="@string/b_program_up_text"

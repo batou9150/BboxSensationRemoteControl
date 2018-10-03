@@ -7,30 +7,29 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-    <Button
-            android:text="@string/b_up_arrow_text"
+    <ImageButton
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:id="@+id/b_up_arrow"
             android:tag='5'
-            style="@style/Widget.AppCompat.Button.Small"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/b_right_arrow"
             app:layout_constraintBottom_toTopOf="@+id/b_ok"
             app:layout_constraintStart_toStartOf="@+id/b_ok"
-            />
+            android:src="@drawable/ic_keyboard_arrow_up_black_24dp"
+            android:contentDescription="@string/b_up_arrow_text"/>
 
-    <Button
-            android:text="@string/b_left_arrow_text"
+    <ImageButton
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:id="@+id/b_left_arrow"
             android:tag='6'
-            style="@style/Widget.AppCompat.Button.Small"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/b_ok"
             app:layout_constraintBottom_toTopOf="@+id/b_down_arrow"
-            app:layout_constraintTop_toTopOf="@+id/b_ok"/>
+            app:layout_constraintTop_toTopOf="@+id/b_ok"
+            android:src="@drawable/ic_keyboard_arrow_left_black_24dp"
+            android:contentDescription="@string/b_left_arrow_text"/>
 
     <Button
             android:text="@string/b_ok_text"
@@ -44,28 +43,28 @@
             app:layout_constraintEnd_toStartOf="@+id/b_right_arrow"
             app:layout_constraintBottom_toTopOf="@+id/b_down_arrow"/>
 
-    <Button
-            android:text="@string/b_right_arrow_text"
+    <ImageButton
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:id="@+id/b_right_arrow"
             android:tag='8'
-            style="@style/Widget.AppCompat.Button.Small"
             app:layout_constraintStart_toEndOf="@+id/b_ok"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/b_down_arrow"
-            app:layout_constraintTop_toTopOf="@+id/b_ok"/>
+            app:layout_constraintTop_toTopOf="@+id/b_ok"
+            android:src="@drawable/ic_keyboard_arrow_right_black_24dp"
+            android:contentDescription="@string/b_right_arrow_text"/>
 
-    <Button
-            android:text="@string/b_down_arrow_text"
+    <ImageButton
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:id="@+id/b_down_arrow"
             android:tag='9'
-            style="@style/Widget.AppCompat.Button.Small"
             app:layout_constraintTop_toBottomOf="@+id/b_ok"
             app:layout_constraintEnd_toStartOf="@+id/b_right_arrow"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintStart_toStartOf="@+id/b_ok"/>
+            app:layout_constraintStart_toStartOf="@+id/b_ok"
+            android:src="@drawable/ic_keyboard_arrow_down_black_24dp"
+            android:contentDescription="@string/b_down_arrow_text"/>
 
 </android.support.constraint.ConstraintLayout>
