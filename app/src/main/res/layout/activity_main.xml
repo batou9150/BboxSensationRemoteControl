@@ -100,4 +100,141 @@
             android:layout_marginTop="8dp"
             style="@style/Widget.AppCompat.Button.Small"/>
 
+    <Space
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@+id/b_volume_down"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:id="@+id/space"/>
+
+    <Button
+            android:text="@string/b_0_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_0"
+            android:tag='59'
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/b_8"
+            app:layout_constraintStart_toStartOf="@+id/b_8"
+            />
+
+    <Button
+            android:text="@string/b_1_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_1"
+            android:tag='50'
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/space"
+            app:layout_constraintEnd_toStartOf="@+id/b_2"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"/>
+
+    <Button
+            android:text="@string/b_2_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_2"
+            android:tag='51'
+            style="@style/Widget.AppCompat.Button.Small"
+            app:layout_constraintTop_toBottomOf="@+id/space"
+            android:layout_marginTop="8dp"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="8dp"
+            android:layout_marginRight="8dp"/>
+
+    <Button
+            android:text="@string/b_3_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_3"
+            android:tag='52'
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/space"
+            app:layout_constraintStart_toEndOf="@+id/b_2"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+
+    <Button
+            android:text="@string/b_4_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_4"
+            android:tag='53'
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/b_1"
+            app:layout_constraintStart_toStartOf="@+id/b_1"
+            />
+
+    <Button
+            android:text="@string/b_5_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_5"
+            android:tag='54'
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/b_2"
+            app:layout_constraintStart_toEndOf="@+id/b_4"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+    <Button
+            android:text="@string/b_6_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_6"
+            android:tag='55'
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/b_3"
+            app:layout_constraintStart_toEndOf="@+id/b_5"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+
+    <Button
+            android:text="@string/b_7_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_7"
+            android:tag='57'
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/b_4"
+            app:layout_constraintStart_toStartOf="@+id/b_4"
+            />
+
+    <Button
+            android:text="@string/b_8_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_8"
+            android:tag='59'
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/b_5"
+            app:layout_constraintStart_toEndOf="@+id/b_7"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+
+    <Button
+            android:text="@string/b_9_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_9"
+            android:tag='58'
+            style="@style/Widget.AppCompat.Button.Small"
+            android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/b_6"
+            app:layout_constraintStart_toEndOf="@+id/b_8"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"/>
+
 </android.support.constraint.ConstraintLayout>

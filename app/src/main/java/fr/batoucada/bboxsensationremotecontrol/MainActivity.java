@@ -21,6 +21,17 @@ public class MainActivity extends AppCompatActivity {
         buttonIdList.add(R.id.b_program_down);
         buttonIdList.add(R.id.b_program_up);
 
+        buttonIdList.add(R.id.b_0);
+        buttonIdList.add(R.id.b_1);
+        buttonIdList.add(R.id.b_2);
+        buttonIdList.add(R.id.b_3);
+        buttonIdList.add(R.id.b_4);
+        buttonIdList.add(R.id.b_5);
+        buttonIdList.add(R.id.b_6);
+        buttonIdList.add(R.id.b_7);
+        buttonIdList.add(R.id.b_8);
+        buttonIdList.add(R.id.b_9);
+
         View.OnClickListener buttonOnClickListener = new View.OnClickListener() {
             public void onClick(View v) {
                 EditText editTextIpAddress = findViewById(R.id.edit_text_ip_address);
