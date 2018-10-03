@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">Télécommande</string>
+    <string name="b_power_text">ON / OFF</string>
+    <string name="b_volume_up_text">V+</string>
+    <string name="b_volume_down_text">V-</string>
+</resources>
