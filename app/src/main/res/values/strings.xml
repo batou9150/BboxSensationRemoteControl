@@ -24,4 +24,9 @@
     <string name="b_right_arrow_text">D</string>
     <string name="b_down_arrow_text">B</string>
     <string name="b_volume_mute_text">Mute</string>
+    <string name="b_fast_rewind_text">Rewind</string>
+    <string name="b_record_text">Record</string>
+    <string name="b_stop_text">Stop</string>
+    <string name="b_fast_forward_text">Forward</string>
+    <string name="b_play_pause_text">Play / Pause</string>
 </resources>
