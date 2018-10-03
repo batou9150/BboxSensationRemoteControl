@@ -7,29 +7,29 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-    <Button
-            android:text="@string/b_volume_up_text"
+    <ImageButton
             android:id="@+id/b_volume_up"
             android:tag='27'
-            style="@style/Widget.AppCompat.Button.Small"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/b_home"
-            app:layout_constraintBottom_toTopOf="@+id/b_volume_down"/>
+            app:layout_constraintBottom_toTopOf="@+id/b_volume_down"
+            android:contentDescription="@string/b_volume_up_text"
+            android:src="@drawable/ic_volume_up_black_24dp"/>
 
-    <Button
-            android:text="@string/b_volume_down_text"
+    <ImageButton
             android:id="@+id/b_volume_down"
             android:tag='28'
-            style="@style/Widget.AppCompat.Button.Small"
             android:layout_width="0dp"
             android:layout_height="0dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/b_volume_up"
             app:layout_constraintEnd_toStartOf="@+id/b_volume_mute"
-            app:layout_constraintBottom_toBottomOf="parent"/>
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:src="@drawable/ic_volume_down_black_24dp"
+            android:contentDescription="@string/b_volume_down_text"/>
 
     <ImageButton
             android:id="@+id/b_home"
@@ -56,25 +56,27 @@
             android:src="@drawable/ic_volume_off_black_24dp"
             android:contentDescription="@string/b_volume_mute_text"/>
 
-    <Button
-            android:text="@string/b_program_up_text"
+    <ImageButton
+            android:contentDescription="@string/b_program_up_text"
             android:id="@+id/b_program_up"
             android:tag='25'
             style="@style/Widget.AppCompat.Button.Small"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:src="@drawable/ic_arrow_drop_up_black_24dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toEndOf="@+id/b_home"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toTopOf="@+id/b_program_down"/>
 
-    <Button
-            android:text="@string/b_program_down"
+    <ImageButton
+            android:contentDescription="@string/b_program_down"
             android:id="@+id/b_program_down"
             android:tag='26'
             style="@style/Widget.AppCompat.Button.Small"
             android:layout_width="0dp"
             android:layout_height="0dp"
+            android:src="@drawable/ic_arrow_drop_down_black_24dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintStart_toEndOf="@+id/b_volume_mute"
