@@ -1,4 +1,4 @@
-package fr.batoucada.bboxsensationremotecontroller;
+package fr.batoucada.bboxsensationremotecontrol;
 
 import org.junit.Test;
 

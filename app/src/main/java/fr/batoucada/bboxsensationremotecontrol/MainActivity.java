@@ -1,4 +1,4 @@
-package fr.batoucada.bboxsensationremotecontroller;
+package fr.batoucada.bboxsensationremotecontrol;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;

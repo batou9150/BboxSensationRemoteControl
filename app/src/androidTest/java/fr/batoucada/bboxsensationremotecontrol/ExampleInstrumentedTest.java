@@ -1,4 +1,4 @@
-package fr.batoucada.bboxsensationremotecontroller;
+package fr.batoucada.bboxsensationremotecontrol;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("fr.batoucada.bboxsensationremotecontroller", appContext.getPackageName());
+        assertEquals("fr.batoucada.bboxsensationremotecontrol", appContext.getPackageName());
     }
 }
