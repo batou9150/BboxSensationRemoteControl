@@ -18,6 +18,7 @@ public class MainActivity extends AppCompatActivity {
         buttonIdList.add(R.id.b_power);
         buttonIdList.add(R.id.b_volume_down);
         buttonIdList.add(R.id.b_volume_up);
+        buttonIdList.add(R.id.b_volume_mute);
         buttonIdList.add(R.id.b_program_down);
         buttonIdList.add(R.id.b_program_up);
 

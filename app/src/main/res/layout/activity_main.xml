@@ -29,7 +29,6 @@
             android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp"
             android:tag='27'
-            android:layout_marginTop="8dp"
             app:layout_constraintTop_toBottomOf="@+id/edit_text_ip_address"
             style="@style/Widget.AppCompat.Button.Small"/>
 
@@ -38,12 +37,23 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/b_volume_down"
-            android:layout_marginTop="8dp"
             app:layout_constraintTop_toBottomOf="@+id/b_volume_up"
             app:layout_constraintStart_toStartOf="parent"
             android:layout_marginLeft="8dp"
             android:layout_marginStart="8dp"
             android:tag='28'
+            style="@style/Widget.AppCompat.Button.Small"/>
+
+    <Button
+            android:text="@string/b_volume_mute"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/b_volume_mute"
+            app:layout_constraintTop_toBottomOf="@+id/b_volume_down"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginLeft="8dp"
+            android:layout_marginStart="8dp"
+            android:tag='32'
             style="@style/Widget.AppCompat.Button.Small"/>
 
     <Button

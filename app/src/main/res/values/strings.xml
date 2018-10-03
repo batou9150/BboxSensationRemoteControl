@@ -22,4 +22,5 @@
     <string name="b_up_arrow_text">H</string>
     <string name="b_right_arrow_text">D</string>
     <string name="b_down_arrow_text">B</string>
+    <string name="b_volume_mute">Mute</string>
 </resources>
