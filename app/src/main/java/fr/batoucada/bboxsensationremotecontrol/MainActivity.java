@@ -16,11 +16,13 @@ public class MainActivity extends AppCompatActivity {
 
         ArrayList<Integer> buttonIdList = new ArrayList<>();
         buttonIdList.add(R.id.b_power);
-        buttonIdList.add(R.id.b_volume_down);
+
         buttonIdList.add(R.id.b_volume_up);
+        buttonIdList.add(R.id.b_volume_down);
+        buttonIdList.add(R.id.b_home);
         buttonIdList.add(R.id.b_volume_mute);
-        buttonIdList.add(R.id.b_program_down);
         buttonIdList.add(R.id.b_program_up);
+        buttonIdList.add(R.id.b_program_down);
 
         buttonIdList.add(R.id.b_0);
         buttonIdList.add(R.id.b_1);
