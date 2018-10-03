@@ -32,6 +32,12 @@ public class MainActivity extends AppCompatActivity {
         buttonIdList.add(R.id.b_8);
         buttonIdList.add(R.id.b_9);
 
+        buttonIdList.add(R.id.b_ok);
+        buttonIdList.add(R.id.b_left_arrow);
+        buttonIdList.add(R.id.b_up_arrow);
+        buttonIdList.add(R.id.b_right_arrow);
+        buttonIdList.add(R.id.b_down_arrow);
+
         View.OnClickListener buttonOnClickListener = new View.OnClickListener() {
             public void onClick(View v) {
                 EditText editTextIpAddress = findViewById(R.id.edit_text_ip_address);
