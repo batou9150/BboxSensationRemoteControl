@@ -3,6 +3,7 @@ package fr.batoucada.bboxsensationremotecontrol;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 import java.util.ArrayList;
 
@@ -13,8 +14,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        final String ipAddress = "192.168.1.150";
-
         ArrayList<Integer> buttonIdList = new ArrayList<>();
         buttonIdList.add(R.id.b_power);
         buttonIdList.add(R.id.b_volume_down);
@@ -24,7 +23,8 @@ public class MainActivity extends AppCompatActivity {
 
         View.OnClickListener buttonOnClickListener = new View.OnClickListener() {
             public void onClick(View v) {
-                new SNMPSet(ipAddress).execute((String) v.getTag());
+                EditText editTextIpAddress = findViewById(R.id.edit_text_ip_address);
+                new SNMPSet(editTextIpAddress.getText().toString()).execute((String) v.getTag());
             }
         };
 

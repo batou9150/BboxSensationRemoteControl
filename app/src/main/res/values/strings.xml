@@ -5,4 +5,6 @@
     <string name="b_volume_down_text">V-</string>
     <string name="b_program_up_text">P+</string>
     <string name="b_program_down">P-</string>
+    <string name="edit_text_ip_address_default">192.168.1.150</string>
+    <string name="b_search_target_text">Scan</string>
 </resources>
