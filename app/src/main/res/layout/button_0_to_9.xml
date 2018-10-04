@@ -7,25 +7,49 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
+    <ImageButton
+            android:id="@+id/b_back"
+            android:src="@drawable/ic_keyboard_return_black_24dp"
+            android:contentDescription="@string/b_back_text"
+            android:tag="13"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/b_7"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/b_0"/>
+
     <Button
             android:text="@string/b_0_text"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:id="@+id/b_0"
-            android:tag='59'
+            android:tag="59"
             style="@style/Widget.AppCompat.Button.Small"
             app:layout_constraintTop_toBottomOf="@+id/b_8"
-            app:layout_constraintStart_toStartOf="@+id/b_8"
             app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintEnd_toEndOf="@+id/b_8"
+            app:layout_constraintStart_toEndOf="@+id/b_back"
+            app:layout_constraintEnd_toStartOf="@+id/b_quit"
             />
+
+    <ImageButton
+            android:id="@+id/b_quit"
+            android:src="@drawable/ic_close_black_24dp"
+            android:contentDescription="@string/b_quit_text"
+            android:tag="16"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            app:layout_constraintTop_toBottomOf="@+id/b_9"
+            app:layout_constraintStart_toEndOf="@+id/b_0"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
 
     <Button
             android:text="@string/b_1_text"
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:id="@+id/b_1"
-            android:tag='50'
+            android:tag="50"
             style="@style/Widget.AppCompat.Button.Small"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -37,7 +61,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:id="@+id/b_2"
-            android:tag='51'
+            android:tag="51"
             style="@style/Widget.AppCompat.Button.Small"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toEndOf="@+id/b_1"
@@ -50,7 +74,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:id="@+id/b_3"
-            android:tag='52'
+            android:tag="52"
             app:layout_constraintStart_toEndOf="@+id/b_2"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -62,7 +86,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:id="@+id/b_4"
-            android:tag='53'
+            android:tag="53"
             style="@style/Widget.AppCompat.Button.Small"
             app:layout_constraintTop_toBottomOf="@+id/b_1"
             app:layout_constraintStart_toStartOf="parent"
@@ -74,7 +98,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:id="@+id/b_5"
-            android:tag='54'
+            android:tag="54"
             style="@style/Widget.AppCompat.Button.Small"
             app:layout_constraintTop_toBottomOf="@+id/b_2"
             app:layout_constraintStart_toEndOf="@+id/b_4"
@@ -86,7 +110,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:id="@+id/b_6"
-            android:tag='55'
+            android:tag="55"
             style="@style/Widget.AppCompat.Button.Small"
             app:layout_constraintTop_toBottomOf="@+id/b_3"
             app:layout_constraintStart_toEndOf="@+id/b_5"
@@ -98,7 +122,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:id="@+id/b_7"
-            android:tag='57'
+            android:tag="57"
             style="@style/Widget.AppCompat.Button.Small"
             app:layout_constraintTop_toBottomOf="@+id/b_4"
             app:layout_constraintStart_toStartOf="parent"
@@ -110,7 +134,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:id="@+id/b_8"
-            android:tag='59'
+            android:tag="59"
             style="@style/Widget.AppCompat.Button.Small"
             app:layout_constraintTop_toBottomOf="@+id/b_5"
             app:layout_constraintStart_toEndOf="@+id/b_7"
@@ -122,7 +146,7 @@
             android:layout_width="0dp"
             android:layout_height="0dp"
             android:id="@+id/b_9"
-            android:tag='58'
+            android:tag="58"
             style="@style/Widget.AppCompat.Button.Small"
             app:layout_constraintTop_toBottomOf="@+id/b_6"
             app:layout_constraintStart_toEndOf="@+id/b_8"

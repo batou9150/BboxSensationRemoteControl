@@ -29,4 +29,6 @@
     <string name="b_stop_text">Stop</string>
     <string name="b_fast_forward_text">Forward</string>
     <string name="b_play_pause_text">Play / Pause</string>
+    <string name="b_back_text">Return</string>
+    <string name="b_quit_text">Quit</string>
 </resources>

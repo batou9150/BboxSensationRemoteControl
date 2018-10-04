@@ -24,6 +24,8 @@ public class MainActivity extends AppCompatActivity {
         buttonIdList.add(R.id.b_program_up);
         buttonIdList.add(R.id.b_program_down);
 
+        buttonIdList.add(R.id.b_quit);
+        buttonIdList.add(R.id.b_back);
         buttonIdList.add(R.id.b_0);
         buttonIdList.add(R.id.b_1);
         buttonIdList.add(R.id.b_2);
