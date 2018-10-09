@@ -25,7 +25,6 @@ dependencies {
     testImplementation 'junit:junit:4.12'
     androidTestImplementation 'com.android.support.test:runner:1.0.2'
     androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
-    // https://mvnrepository.com/artifact/org.snmp4j/snmp4j
-    implementation group: 'org.snmp4j', name: 'snmp4j', version: '2.6.3'
+    implementation 'org.snmp4j:snmp4j:2.6.3'
     implementation 'com.android.support:design:26.1.0'
 }
