@@ -10,8 +10,8 @@
     <ImageButton
             android:id="@+id/b_volume_up"
             android:tag='27'
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintEnd_toStartOf="@+id/b_home"
@@ -22,8 +22,8 @@
     <ImageButton
             android:id="@+id/b_volume_down"
             android:tag='28'
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/b_volume_up"
             app:layout_constraintEnd_toStartOf="@+id/b_volume_mute"
@@ -35,8 +35,8 @@
             android:id="@+id/b_home"
             android:tag='12'
             style="@style/Widget.AppCompat.Button.Small"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toEndOf="@+id/b_volume_up"
             app:layout_constraintEnd_toStartOf="@+id/b_program_up"
@@ -47,8 +47,8 @@
     <ImageButton
             android:id="@+id/b_volume_mute"
             android:tag='32'
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
             app:layout_constraintTop_toBottomOf="@+id/b_home"
             app:layout_constraintEnd_toStartOf="@+id/b_program_down"
             app:layout_constraintStart_toEndOf="@+id/b_volume_down"
@@ -61,8 +61,8 @@
             android:id="@+id/b_program_up"
             android:tag='25'
             style="@style/Widget.AppCompat.Button.Small"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
             android:src="@drawable/ic_arrow_drop_up_black_24dp"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintStart_toEndOf="@+id/b_home"
@@ -74,8 +74,8 @@
             android:id="@+id/b_program_down"
             android:tag='26'
             style="@style/Widget.AppCompat.Button.Small"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
             android:src="@drawable/ic_arrow_drop_down_black_24dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
