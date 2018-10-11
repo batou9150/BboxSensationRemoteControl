@@ -1,9 +1,11 @@
 package fr.batoucada.bboxsensationremotecontrol;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v4.content.res.ResourcesCompat;
+import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageButton;
 
 import java.util.ArrayList;
 
@@ -52,12 +54,22 @@ public class MainActivity extends AppCompatActivity {
         View.OnClickListener buttonOnClickListener = new View.OnClickListener() {
             public void onClick(View v) {
                 EditText editTextIpAddress = findViewById(R.id.edit_text_ip_address);
-                new SNMPSet(editTextIpAddress.getText().toString()).execute((String) v.getTag());
+                new BboxSend(editTextIpAddress.getText().toString()).execute((String) v.getTag());
             }
         };
 
         for (Integer buttonId : buttonIdList) {
             findViewById(buttonId).setOnClickListener(buttonOnClickListener);
         }
+
+        ImageButton b_search_target = findViewById(R.id.b_search_target);
+        b_search_target.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
+                EditText editTextIpAddress = findViewById(R.id.edit_text_ip_address);
+                ImageButton b_search_target = findViewById(R.id.b_search_target);
+                Integer colorValid = ResourcesCompat.getColor(getResources(), R.color.colorValid, null);
+                new BboxIp(b_search_target, editTextIpAddress, colorValid).execute(editTextIpAddress.getText().toString());
+            }
+        });
     }
 }
