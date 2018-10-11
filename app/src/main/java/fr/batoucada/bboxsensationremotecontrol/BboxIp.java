@@ -3,8 +3,10 @@ package fr.batoucada.bboxsensationremotecontrol;
 import android.graphics.Color;
 import android.graphics.PorterDuff;
 import android.os.AsyncTask;
+import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ProgressBar;
 
 import java.io.IOException;
 import java.lang.ref.WeakReference;
@@ -16,10 +18,12 @@ class BboxIp extends AsyncTask<String, Integer, String> {
     private WeakReference<ImageButton> searchButton;
     private WeakReference<EditText> ipAddressField;
     private Integer colorValid;
+    private WeakReference<ProgressBar> progressBar;
 
-    BboxIp(ImageButton searchButton, EditText ipAddressField, Integer colorValid) {
+    BboxIp(ImageButton searchButton, EditText ipAddressField, ProgressBar progressBar, Integer colorValid) {
         this.searchButton = new WeakReference<>(searchButton);
         this.ipAddressField = new WeakReference<>(ipAddressField);
+        this.progressBar = new WeakReference<>(progressBar);
         this.colorValid = colorValid;
     }
 
@@ -31,6 +35,9 @@ class BboxIp extends AsyncTask<String, Integer, String> {
         }
         if (ipAddressField.get() != null) {
             ipAddressField.get().getBackground().clearColorFilter();
+        }
+        if (progressBar.get() != null) {
+            progressBar.get().setVisibility(View.VISIBLE);
         }
     }
 
@@ -71,13 +78,15 @@ class BboxIp extends AsyncTask<String, Integer, String> {
 
     @Override
     protected void onProgressUpdate(Integer... progress) {
-
+        if (progressBar.get() != null) {
+            progressBar.get().setProgress(progress[0]);
+        }
     }
 
     @Override
     protected void onPostExecute(String result) {
         if (result != null && ipAddressField.get() != null) {
-            if (result.equals(ipAddressField.get().getText().toString())) ipAddressField.get().setText(result);
+            if (!result.equals(ipAddressField.get().getText().toString())) ipAddressField.get().setText(result);
             ipAddressField.get().setError(null);
             ipAddressField.get().getBackground().setColorFilter(colorValid, PorterDuff.Mode.SRC_ATOP);
         } else if (ipAddressField.get() != null) {
@@ -87,6 +96,9 @@ class BboxIp extends AsyncTask<String, Integer, String> {
         if (searchButton.get() != null) {
             searchButton.get().setEnabled(true);
             searchButton.get().clearColorFilter();
+        }
+        if (progressBar.get() != null) {
+            progressBar.get().setVisibility(View.GONE);
         }
     }
 }

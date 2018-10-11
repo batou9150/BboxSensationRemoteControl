@@ -6,6 +6,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ProgressBar;
 
 import java.util.ArrayList;
 
@@ -68,7 +69,8 @@ public class MainActivity extends AppCompatActivity {
                 EditText editTextIpAddress = findViewById(R.id.edit_text_ip_address);
                 ImageButton b_search_target = findViewById(R.id.b_search_target);
                 Integer colorValid = ResourcesCompat.getColor(getResources(), R.color.colorValid, null);
-                new BboxIp(b_search_target, editTextIpAddress, colorValid).execute(editTextIpAddress.getText().toString());
+                ProgressBar progressBar = findViewById(R.id.progressBar);
+                new BboxIp(b_search_target, editTextIpAddress, progressBar, colorValid).execute(editTextIpAddress.getText().toString());
             }
         });
     }

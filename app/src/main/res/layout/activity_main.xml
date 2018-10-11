@@ -70,7 +70,8 @@
             android:layout_marginEnd="8dp"
             android:layout_marginRight="8dp"
             app:layout_constraintBottom_toBottomOf="parent"
-            android:layout_marginBottom="8dp">
+            android:layout_marginBottom="8dp"
+            android:id="@+id/scrollView2">
 
         <LinearLayout
                 android:layout_width="match_parent"
@@ -136,5 +137,20 @@
                     app:layout_constraintTop_toBottomOf="@+id/include3"/>
         </LinearLayout>
     </ScrollView>
+
+    <ProgressBar
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:id="@+id/progressBar"
+            app:layout_constraintTop_toTopOf="@+id/scrollView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="64dp"
+            android:layout_marginBottom="64dp"
+            android:layout_marginStart="64dp"
+            android:layout_marginEnd="64dp"
+            android:indeterminate="false"
+            android:visibility="invisible"/>
 
 </android.support.constraint.ConstraintLayout>
