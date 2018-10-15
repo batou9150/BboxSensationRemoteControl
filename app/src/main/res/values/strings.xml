@@ -6,7 +6,7 @@
     <string name="b_volume_down_text">V-</string>
     <string name="b_program_up_text">P+</string>
     <string name="b_program_down">P-</string>
-    <string name="edit_text_ip_address_default">192.168.1.150</string>
+    <string name="edit_text_ip_address_default">Adresse IP de la Bbox</string>
     <string name="b_search_target_text">Scan</string>
     <string name="b_0_text">0</string>
     <string name="b_1_text">1</string>

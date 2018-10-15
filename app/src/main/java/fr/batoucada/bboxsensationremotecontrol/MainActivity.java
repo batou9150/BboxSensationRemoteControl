@@ -1,5 +1,6 @@
 package fr.batoucada.bboxsensationremotecontrol;
 
+import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.support.v4.content.res.ResourcesCompat;
 import android.support.v7.app.AppCompatActivity;
@@ -52,9 +53,20 @@ public class MainActivity extends AppCompatActivity {
         buttonIdList.add(R.id.b_play_pause);
         buttonIdList.add(R.id.b_fast_forward);
 
+        SharedPreferences mPrefs = getSharedPreferences("label", 0);
+        String mIpAddress = mPrefs.getString("ip_address", getResources().getString(R.string.edit_text_ip_address_default));
+        EditText editTextIpAddress = findViewById(R.id.edit_text_ip_address);
+        editTextIpAddress.setText(mIpAddress);
+
         View.OnClickListener buttonOnClickListener = new View.OnClickListener() {
             public void onClick(View v) {
                 EditText editTextIpAddress = findViewById(R.id.edit_text_ip_address);
+                if (getResources().getString(R.string.edit_text_ip_address_default).equals(editTextIpAddress.getText().toString())) {
+                    ImageButton b_search_target = findViewById(R.id.b_search_target);
+                    Integer colorValid = ResourcesCompat.getColor(getResources(), R.color.colorValid, null);
+                    ProgressBar progressBar = findViewById(R.id.progressBar);
+                    new BboxIp(b_search_target, editTextIpAddress, progressBar, colorValid).execute(editTextIpAddress.getText().toString());
+                }
                 new BboxSend(editTextIpAddress.getText().toString()).execute((String) v.getTag());
             }
         };
@@ -73,5 +85,13 @@ public class MainActivity extends AppCompatActivity {
                 new BboxIp(b_search_target, editTextIpAddress, progressBar, colorValid).execute(editTextIpAddress.getText().toString());
             }
         });
+    }
+
+    @Override
+    protected void onStop() {
+        // call the superclass method first
+        super.onStop();
+        EditText editTextIpAddress = findViewById(R.id.edit_text_ip_address);
+        getSharedPreferences("label", 0).edit().putString("ip_address", editTextIpAddress.getText().toString()).apply();
     }
 }
