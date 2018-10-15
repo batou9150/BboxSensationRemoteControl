@@ -65,9 +65,9 @@ public class MainActivity extends AppCompatActivity {
                     ImageButton b_search_target = findViewById(R.id.b_search_target);
                     Integer colorValid = ResourcesCompat.getColor(getResources(), R.color.colorValid, null);
                     ProgressBar progressBar = findViewById(R.id.progressBar);
-                    new BboxIp(b_search_target, editTextIpAddress, progressBar, colorValid).execute(editTextIpAddress.getText().toString());
-                }
-                new BboxSend(editTextIpAddress.getText().toString()).execute((String) v.getTag());
+                    new BboxIp(b_search_target, editTextIpAddress, progressBar, colorValid, (String) v.getTag()).execute();
+                } else
+                    new BboxSend(editTextIpAddress.getText().toString()).execute((String) v.getTag());
             }
         };
 
@@ -82,7 +82,7 @@ public class MainActivity extends AppCompatActivity {
                 ImageButton b_search_target = findViewById(R.id.b_search_target);
                 Integer colorValid = ResourcesCompat.getColor(getResources(), R.color.colorValid, null);
                 ProgressBar progressBar = findViewById(R.id.progressBar);
-                new BboxIp(b_search_target, editTextIpAddress, progressBar, colorValid).execute(editTextIpAddress.getText().toString());
+                new BboxIp(b_search_target, editTextIpAddress, progressBar, colorValid).execute();
             }
         });
     }
